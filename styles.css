@@ -10,7 +10,9 @@
 /* start of declaration of variables */
 
 :root {
-  --primary-color: #004bc4;
+  --primary-color: black;
+  --secondary-color: #164577;
+  --shadow-color: #16457704;
 }
 
 /* end of declaration of variables */
@@ -44,6 +46,10 @@ address {
   font-style: normal;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* end of global styles */
 
 /* start of navbar styles */
@@ -54,17 +60,18 @@ nav#navbar {
   justify-content: space-between;
 
   background-color: white;
+  box-shadow: 0px 2px var(--shadow-color);
 
   position: sticky;
   z-index: 1;
   top: 0px;
 }
 
-#logo {
+img#logo {
   height: 80px;
 }
 
-#nav-items {
+ul#nav-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -73,12 +80,48 @@ nav#navbar {
   list-style: none;
 }
 
-.nav-item {
-
+li.nav-item {
 }
 
 /* end of navbar styles */
 
-#banner {
+main#content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 16px 32px 0px 32px;
+}
+
+img#banner {
   width: 100%;
 }
+
+h1.header {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: Urzeit;
+  color: var(--secondary-color);
+  text-align: center;
+}
+/* start of contact styles */
+
+#contact-information {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact-details {
+  width: 40%;
+}
+
+#map {
+  width: 100%;
+  aspect-ratio: 1.25;
+
+  border: 8px solid var(--secondary-color);
+  border-radius: 16px;
+}
+
+/* end of contact styles */
