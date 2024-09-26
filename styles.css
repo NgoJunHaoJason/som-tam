@@ -17,7 +17,7 @@
 :root {
   --primary-color: black;
   --secondary-color: #164577;
-  --shadow-color: #16457704;
+  --shadow-color: #16457708;
 }
 
 /* end of declaration of variables */
@@ -55,6 +55,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0;
+}
+
 /* end of global styles */
 
 /* start of navbar styles */
@@ -80,14 +84,23 @@ img#logo {
 
 ul#nav-items {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 
   list-style: none;
+  margin: 0px 40px;
 }
 
 li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+a.nav-link {
+  &:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
 }
 
 /* end of navbar styles */
@@ -112,6 +125,13 @@ h1.header {
   color: var(--secondary-color);
   text-align: center;
 }
+
+div#menu-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* start of contact styles */
 
 #contact-information {
