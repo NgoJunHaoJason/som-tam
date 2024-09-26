@@ -5,6 +5,11 @@
   src: url("./fonts/Urzeit-Personal_Use.ttf");
 }
 
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/SF-Pro.ttf");
+}
+
 /* end of declaration of font family */
 
 /* start of declaration of variables */
@@ -62,6 +67,8 @@ nav#navbar {
   background-color: white;
   box-shadow: 0px 2px var(--shadow-color);
 
+  font-family: SFPro;
+
   position: sticky;
   z-index: 1;
   top: 0px;
@@ -91,6 +98,7 @@ main#content {
   gap: 16px;
 
   margin: 16px 32px 0px 32px;
+  font-family: SFPro;
 }
 
 img#banner {
