@@ -37,9 +37,10 @@ p {
 }
 
 body {
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif; /* fallback */
-  background-color: white;
   color: var(--primary-color);
+  background-color: white;
 }
 
 a {
@@ -121,20 +122,63 @@ h1.header {
   font-weight: 400;
   font-family: Urzeit;
   color: var(--secondary-color);
+  letter-spacing: 4px;
   text-align: center;
-}
-
-div#menu-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  gap: 32px
+  gap: 32px;
 }
+
+/* start of menu styles */
+
+div.menu {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+div.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 480px;
+}
+
+h2.category {
+  font-size: 32px;
+  font-weight: 200;
+  font-family: Urzeit;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+div.menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.menu-linebreak {
+  height: 8px;
+}
+
+div.food, div.food-options {
+  display: flex;
+}
+
+b.food-number, .menu-indentation {
+  width: 32px;
+  color: var(--secondary-color);
+}
+
+i.menu-note {
+  font-size: 16px;
+}
+
+/* end of menu styles */
 
 /* start of about styles */
 
