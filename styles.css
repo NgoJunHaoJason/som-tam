@@ -41,6 +41,10 @@ body {
   font-family: Arial, Helvetica, sans-serif; /* fallback */
   color: var(--primary-color);
   background-color: white;
+
+  @media (width < 768px) {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -111,6 +115,11 @@ main#content {
 
   margin: 64px;
   font-family: SFPro;
+
+  @media (width < 768px) {
+    gap: 32px;
+    margin: 32px;
+  }
 }
 
 img#banner {
@@ -124,12 +133,20 @@ h1.header {
   color: var(--secondary-color);
   letter-spacing: 4px;
   text-align: center;
+
+  @media (width < 768px) {
+    font-size: 48px;
+  }
 }
 
 .section {
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (width < 768px) {
+    gap: 24px;
+  }
 }
 
 /* start of menu styles */
@@ -148,6 +165,10 @@ button.menu-button {
   padding: 8px 16px;
   border: 2px solid var(--secondary-color);
   cursor: pointer;
+
+  @media (width < 768px) {
+    font-size: 20px;
+  }
 }
 
 button#daytime-menu-button {
@@ -170,6 +191,12 @@ div.menu {
   display: flex;
   justify-content: center;
   gap: 64px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 div#daytime-menu {
@@ -181,7 +208,12 @@ div.menu-column {
   flex-direction: column;
   gap: 24px;
 
-  width: 420px;
+  width: 480px;
+
+  @media (width < 768px) {
+    gap: 20px;
+    width: 320px;
+  }
 }
 
 h2.category {
@@ -190,6 +222,10 @@ h2.category {
   font-family: Urzeit;
   color: var(--secondary-color);
   letter-spacing: 2px;
+
+  @media (width < 768px) {
+    font-size: 24px;
+  }
 }
 
 div.menu-row {
