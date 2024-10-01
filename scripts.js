@@ -8,6 +8,17 @@ const enableMenuButtons = () => {
 
   const eveningMenuButton = document.getElementById("evening-menu-button");
   eveningMenuButton.onclick = toggleEveningMenu;
+
+  const currentDate = new Date();
+  const currentTime = currentDate.getTime();
+
+  const switchoverDate = new Date();
+  switchoverDate.setHours(15, 0, 0, 0); // 3pm
+  const switchoverTime = switchoverDate.getTime();
+
+  if (currentTime < switchoverTime) {
+    toggleDaytimeMenu();
+  }
 }
 
 const toggleDaytimeMenu = () => {
