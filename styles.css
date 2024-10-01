@@ -258,10 +258,19 @@ div.about-subsection {
   display: flex;
   justify-content: center;
   gap: 64px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 img.about-photo {
   width: 32%;
+
+  @media (width < 768px) {
+    width: 96%;
+  }
 }
 
 div.about-paragraph {
@@ -269,6 +278,12 @@ div.about-paragraph {
   align-items: center;
 
   width: 64%;
+
+  @media (width < 768px) {
+    width: 96%;
+
+    text-align: justify;
+  }
 }
 
 /* end of about styles */
