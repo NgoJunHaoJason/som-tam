@@ -39,7 +39,212 @@
       <div class="section" id="menu-section">
         <h1 id="menu-header" class="header">Menu</h1>
 
-        <div class="menu">
+        <div id="menu-switcher">
+          <button class="menu-button" id="daytime-menu-button">
+            COFFEE & DAYTIME MENU</button
+          ><button class="menu-button" id="evening-menu-button">
+            TAKEAWAY EVENING MENU
+          </button>
+        </div>
+
+        <div class="menu" id="daytime-menu">
+          <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <h2 class="category">COFFEE</h2>
+              </div>
+
+              <div class="menu-row">
+                <i class="category-description">
+                  All coffee drinks are made with a double shot of Underground
+                  espresso
+                </i>
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <b>Black</b>
+                <div class="price">4.50</div>
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Short Black
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Long Black
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Americano
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <b>White</b>
+                <div class="price">5&nbsp;|&nbsp;5.50&nbsp;|&nbsp;6</div>
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Flat White
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Latte
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Cappuccino
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Mocha
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Chai Latte
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Hot Chocolate
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <div class="food">
+                  <div class="menu-indentation"></div>
+                  Piccolo
+                </div>
+                <div class="price">4.50</div>
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Short Macchiato
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Long Macchiato
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <b>Iced</b>
+                <div class="price">6</div>
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Americano
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Latte
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <b>Extras</b>
+                <div class="price">0.80</div>
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Alternative Milk
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Extra Shot
+              </div>
+
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Syrup
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-row">
+                <h2 class="category">LUNCH</h2>
+                <div class="price">18</div>
+              </div>
+
+              <div class="menu-row">
+                <i class="category-description">
+                  Our takeaway lunch meals are cooked fresh to order in the wok
+                </i>
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="food">
+                <b>Pad Krapow</b>
+              </div>
+
+              <div>
+                Thailand's most famous spicy street food dish. Stir-fried pork
+                with chilli, garlic, bamboo shoots & vegetables, served with
+                steamed jasmine rice. Top with a fried egg for $2 extra.
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="food">
+                <b>Pad Thai</b>
+              </div>
+
+              <div>
+                Stir-fried rice noodles with egg & tamarind sauce, topped with
+                bean sprouts, chives & chopped peanuts. Choose from chicken or
+                vegetables.
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="food">
+                <b>Khao Pad</b>
+              </div>
+
+              <div>
+                Thai fried rice with vegetables, egg & traditional seasoning.
+                Choose from chicken or vegetables.
+              </div>
+            </div>
+
+            <div class="menu-subsection">
+              <div class="food">
+                <b>Nam Tok</b>
+              </div>
+
+              <div>
+                Thai-style spicy chicken salad with chilli, red onion and mint,
+                served with steamed jasmine rice. Top with a fried egg for $2
+                extra.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu" id="evening-menu">
           <div class="menu-column">
             <div class="menu-subsection">
               <h2 class="category">STARTERS</h2>
@@ -93,7 +298,7 @@
               </div>
             </div>
 
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <h2 class="category">NOODLES & RICE</h2>
 
               <div class="menu-row">
@@ -175,7 +380,7 @@
               </div>
             </div>
 
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <h2 class="category">CURRY</h2>
 
               <div class="menu-row">
@@ -263,7 +468,7 @@
           </div>
 
           <div class="menu-column">
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <h2 class="category">STIR-FRY</h2>
 
               <div class="menu-row">
@@ -360,7 +565,7 @@
               </div>
             </div>
 
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <h2 class="category">OTHER</h2>
 
               <div class="menu-row">
@@ -437,7 +642,7 @@
               </div>
             </div>
 
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <h2 class="category">KIDS</h2>
 
               <div class="menu-row">
@@ -457,11 +662,12 @@
               </div>
             </div>
 
-            <div class="food-subsection">
+            <div class="menu-subsection">
               <i class="menu-note">
                 All our "Curry", "Stir-Fry" & "Other" dishes are served with
-                steamed jasmine rice. Change to fried rice/ noodles for $2. Most
-                main dishes can be made gluten free. Menu valid from July 2024.
+                steamed jasmine rice. Change to fried rice / noodles for $2.
+                Most main dishes can be made gluten free. Menu valid from July
+                2024.
               </i>
             </div>
           </div>

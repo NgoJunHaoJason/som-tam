@@ -134,10 +134,45 @@ h1.header {
 
 /* start of menu styles */
 
+div#menu-switcher {
+  display: flex;
+  justify-content: center;
+}
+
+button.menu-button {
+  font-size: 24px;
+  font-weight: 200px;
+  font-family: Urzeit;
+  letter-spacing: 1px;
+
+  padding: 8px 16px;
+  border: 2px solid var(--secondary-color);
+}
+
+button#daytime-menu-button {
+  background-color: white;
+  color: var(--secondary-color);
+
+  border-radius: 8px 0px 0px 8px;
+  border-right: none;
+}
+
+button#evening-menu-button {
+  background-color: var(--secondary-color);
+  color: white;
+
+  border-radius: 0px 8px 8px 0px;
+  border-left: none;
+}
+
 div.menu {
   display: flex;
   justify-content: center;
   gap: 64px;
+}
+
+div#daytime-menu {
+  /* TODO */
 }
 
 div.menu-column {
@@ -145,7 +180,7 @@ div.menu-column {
   flex-direction: column;
   gap: 24px;
 
-  width: 480px;
+  width: 420px;
 }
 
 h2.category {
