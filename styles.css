@@ -147,6 +147,7 @@ button.menu-button {
 
   padding: 8px 16px;
   border: 2px solid var(--secondary-color);
+  cursor: pointer;
 }
 
 button#daytime-menu-button {
@@ -172,7 +173,7 @@ div.menu {
 }
 
 div#daytime-menu {
-  /* TODO */
+  display: none;
 }
 
 div.menu-column {
