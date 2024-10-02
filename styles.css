@@ -75,7 +75,6 @@ ul {
 
 nav#navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   background-color: white;
@@ -86,10 +85,37 @@ nav#navbar {
   position: sticky;
   z-index: 1;
   top: 0px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+  }
+}
+
+div#nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+button#nav-button {
+  display: none;
+
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  background-color: white;
+  border: none;
+
+  @media (width < 768px) {
+    display: block;
+  }
 }
 
 img#logo {
   height: 80px;
+
+  @media (width < 768px) {
+    height: 64px;
+  }
 }
 
 ul#nav-items {
@@ -99,11 +125,24 @@ ul#nav-items {
 
   list-style: none;
   margin: 0px 40px;
+
+  @media (width < 768px) {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+
+    margin: 16px 16px;
+  }
 }
 
 li.nav-item {
   display: flex;
   align-items: center;
+
+  @media (width < 768px) {
+    /* display: none; */
+    justify-content: right;
+  }
 }
 
 /* end of navbar styles */

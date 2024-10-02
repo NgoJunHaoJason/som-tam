@@ -1,5 +1,16 @@
 const main = () => {
+  enableNavButton();
   enableMenuButtons();
+};
+
+const enableNavButton = () => {
+  const navButton = document.getElementById("nav-button");
+  navButton.onclick = toggleNavItems;
+};
+
+const toggleNavItems = () => {
+  const navItems = document.getElementById("nav-items");
+  navItems.style.display = navItems.style.display === "none" ? "flex" : "none";
 }
 
 const enableMenuButtons = () => {
@@ -21,7 +32,7 @@ const enableMenuButtons = () => {
   } else {
     toggleEveningMenu();
   }
-}
+};
 
 const toggleDaytimeMenu = () => {
   activateMenuButton("daytime-menu-button");
@@ -30,9 +41,9 @@ const toggleDaytimeMenu = () => {
   showMenuHours("daytime-hours");
   hideMenuHours("evening-hours");
 
-  showMenu("daytime-menu")
+  showMenu("daytime-menu");
   hideMenu("evening-menu");
-}
+};
 
 const toggleEveningMenu = () => {
   activateMenuButton("evening-menu-button");
@@ -41,40 +52,40 @@ const toggleEveningMenu = () => {
   showMenuHours("evening-hours");
   hideMenuHours("daytime-hours");
 
-  showMenu("evening-menu")
+  showMenu("evening-menu");
   hideMenu("daytime-menu");
-}
+};
 
 const activateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
   menuButton.style.backgroundColor = "#164577";
   menuButton.style.color = "white";
-}
+};
 
 const deactivateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
   menuButton.style.backgroundColor = "white";
   menuButton.style.color = "#164577";
-}
+};
 
 const showMenuHours = (menuHoursId) => {
   const menuHours = document.getElementById(menuHoursId);
   menuHours.style.display = "block";
-}
+};
 
 const hideMenuHours = (menuHoursId) => {
   const menuHours = document.getElementById(menuHoursId);
   menuHours.style.display = "none";
-}
+};
 
 const showMenu = (menuId) => {
   const menu = document.getElementById(menuId);
   menu.style.display = "flex";
-}
+};
 
 const hideMenu = (menuId) => {
   const menu = document.getElementById(menuId);
   menu.style.display = "none";
-}
+};
 
 main(); // code is ran here
