@@ -290,17 +290,26 @@ div.about-paragraph {
 
 /* start of contact styles */
 
-#contact-information {
+div#contact-information {
   display: flex;
   justify-content: center;
   gap: 32px;
 }
 
-.contact-details {
+div.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
   width: 40%;
 }
 
-#map {
+i.contact-icon {
+  color: var(--secondary-color);
+}
+
+iframe#map {
   width: 100%;
   aspect-ratio: 1.25;
 
