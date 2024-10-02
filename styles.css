@@ -287,6 +287,11 @@ b.food-number, .menu-indentation {
   color: var(--secondary-color);
 }
 
+div.price {
+  display: flex;
+  align-items: center;
+}
+
 i.menu-note {
   font-size: 16px;
 }
