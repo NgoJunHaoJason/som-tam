@@ -118,7 +118,7 @@ main#content {
 
   @media (width < 768px) {
     gap: 32px;
-    margin: 32px;
+    margin: 32px 24px;
   }
 }
 
@@ -145,7 +145,7 @@ h1.header {
   gap: 32px;
 
   @media (width < 768px) {
-    gap: 24px;
+    gap: 20px;
   }
 }
 
@@ -280,7 +280,7 @@ div.about-paragraph {
   width: 64%;
 
   @media (width < 768px) {
-    width: 96%;
+    width: 100%;
 
     text-align: justify;
   }
@@ -294,6 +294,11 @@ div#contact-information {
   display: flex;
   justify-content: center;
   gap: 32px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 div.contact-details {
@@ -303,6 +308,11 @@ div.contact-details {
   gap: 16px;
 
   width: 40%;
+
+  @media (width < 768px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 i.contact-icon {
@@ -315,6 +325,11 @@ iframe#map {
 
   border: 8px solid var(--secondary-color);
   border-radius: 16px;
+
+  @media (width < 768px) {
+    border-width: 4px;
+    width: calc(100% - 8px);
+  }
 }
 
 /* end of contact styles */
