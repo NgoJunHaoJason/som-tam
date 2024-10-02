@@ -18,12 +18,17 @@ const enableMenuButtons = () => {
 
   if (currentTime < switchoverTime) {
     toggleDaytimeMenu();
+  } else {
+    toggleEveningMenu();
   }
 }
 
 const toggleDaytimeMenu = () => {
   activateMenuButton("daytime-menu-button");
   deactivateMenuButton("evening-menu-button");
+
+  showMenuHours("daytime-hours");
+  hideMenuHours("evening-hours");
 
   showMenu("daytime-menu")
   hideMenu("evening-menu");
@@ -32,6 +37,9 @@ const toggleDaytimeMenu = () => {
 const toggleEveningMenu = () => {
   activateMenuButton("evening-menu-button");
   deactivateMenuButton("daytime-menu-button");
+
+  showMenuHours("evening-hours");
+  hideMenuHours("daytime-hours");
 
   showMenu("evening-menu")
   hideMenu("daytime-menu");
@@ -47,6 +55,16 @@ const deactivateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
   menuButton.style.backgroundColor = "white";
   menuButton.style.color = "#164577";
+}
+
+const showMenuHours = (menuHoursId) => {
+  const menuHours = document.getElementById(menuHoursId);
+  menuHours.style.display = "block";
+}
+
+const hideMenuHours = (menuHoursId) => {
+  const menuHours = document.getElementById(menuHoursId);
+  menuHours.style.display = "none";
 }
 
 const showMenu = (menuId) => {

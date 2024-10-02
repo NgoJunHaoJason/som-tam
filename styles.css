@@ -187,6 +187,10 @@ button#evening-menu-button {
   border-left: none;
 }
 
+div.menu-hours {
+  text-align: center;
+}
+
 div.menu {
   display: flex;
   justify-content: center;
@@ -197,10 +201,6 @@ div.menu {
     align-items: center;
     gap: 20px;
   }
-}
-
-div#daytime-menu {
-  display: none;
 }
 
 div.menu-column {
