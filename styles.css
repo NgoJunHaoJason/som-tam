@@ -283,7 +283,7 @@ div.food, div.food-options {
 }
 
 b.food-number, .menu-indentation {
-  width: 32px;
+  width: 24px;
   color: var(--secondary-color);
 }
 
@@ -294,6 +294,10 @@ div.price {
 
 i.menu-note {
   font-size: 16px;
+
+  @media (width < 768px) {
+    font-size: 14px;
+  }
 }
 
 /* end of menu styles */
