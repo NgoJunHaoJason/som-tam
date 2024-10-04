@@ -201,6 +201,11 @@ h2.subheader {
   }
 }
 
+.photo {
+  box-shadow: 0px 0px 2px 2px var(--shadow-color);
+  border-radius: 8px;
+}
+
 /* start of menu styles */
 
 div#menu-switcher {
@@ -384,7 +389,7 @@ div.contact-details {
   justify-content: center;
   gap: 16px;
 
-  width: 40%;
+  width: 42%;
 
   @media (width < 768px) {
     width: 100%;
@@ -399,12 +404,9 @@ i.contact-icon {
 iframe#map {
   width: 100%;
   aspect-ratio: 1.25;
-
-  border: 8px solid var(--secondary-color);
-  border-radius: 16px;
+  border: none;
 
   @media (width < 768px) {
-    border-width: 4px;
     width: calc(100% - 8px);
   }
 }
