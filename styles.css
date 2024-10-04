@@ -166,6 +166,16 @@ img#banner {
   width: 100%;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (width < 768px) {
+    gap: 20px;
+  }
+}
+
 h1.header {
   font-size: 64px;
   font-weight: 400;
@@ -179,13 +189,15 @@ h1.header {
   }
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+h2.subheader {
+  font-size: 32px;
+  font-weight: 200;
+  font-family: Urzeit;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
 
   @media (width < 768px) {
-    gap: 20px;
+    font-size: 24px;
   }
 }
 
@@ -257,18 +269,6 @@ div.menu-column {
   }
 }
 
-h2.category {
-  font-size: 32px;
-  font-weight: 200;
-  font-family: Urzeit;
-  color: var(--secondary-color);
-  letter-spacing: 2px;
-
-  @media (width < 768px) {
-    font-size: 24px;
-  }
-}
-
 div.menu-row {
   display: flex;
   justify-content: space-between;
@@ -283,8 +283,12 @@ div.food, div.food-options {
 }
 
 b.food-number, .menu-indentation {
-  width: 24px;
+  width: 32px;
   color: var(--secondary-color);
+
+  @media (width < 768px) {
+    width: 24px;
+  }
 }
 
 div.price {
@@ -301,6 +305,29 @@ i.menu-note {
 }
 
 /* end of menu styles */
+
+/* start of specials styles */
+
+div#specials {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+
+  @media (width < 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+div.special {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  text-align: center;
+}
+
+/* end of specials styles */
 
 /* start of about styles */
 
