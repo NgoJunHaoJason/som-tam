@@ -412,3 +412,15 @@ iframe#map {
 }
 
 /* end of contact styles */
+
+footer#footer {
+  border-top: 1px solid var(--shadow-color);
+  text-align: center;
+  padding-top: 32px;
+  font-size: 18px;
+
+  @media (width < 768px) {
+    padding-top: 16px;
+    font-size: 14px;
+  }
+}
