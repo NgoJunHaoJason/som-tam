@@ -26,6 +26,11 @@ const onScroll = () => {
 const enableNavButton = () => {
   const navButton = document.getElementById("nav-button");
   navButton.onclick = toggleNavItems;
+
+  const navLinks = document.getElementsByClassName("nav-link");
+  for (const navLink of navLinks) {
+    navLink.onclick = toggleNavItems;
+  }
 };
 
 const toggleNavItems = () => {
@@ -34,7 +39,7 @@ const toggleNavItems = () => {
   navBar.style.boxShadow = "0px 4px var(--shadow-color)";
 
   const navItems = document.getElementById("nav-items");
-  navItems.style.display = navItems.style.display === "none" ? "flex" : "none";
+  navItems.style.display = navItems.style.display === "none" || navItems.style.display === "" ? "flex" : "none";
 };
 
 const enableMenuButtons = () => {
