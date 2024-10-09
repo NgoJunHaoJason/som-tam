@@ -1,818 +1,800 @@
 <!DOCTYPE html>
 
 <html>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <head>
-    <title>Som Tam</title>
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--icons-->
-    <link href="./icons/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="./icons/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="./icons/fontawesome/css/solid.css" rel="stylesheet" />
+<head>
+  <title>Som Tam</title>
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
 
-    <script defer type="text/javascript" src="./scripts.js"></script>
-  </head>
+  <!--icons-->
+  <link href="./icons/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./icons/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./icons/fontawesome/css/solid.css" rel="stylesheet" />
 
-  <body>
-    <nav id="navbar">
-      <div id="nav-header">
-        <img id="logo" src="./images/som_tam-logo.png" />
+  <script defer type="text/javascript" src="./scripts.js"></script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCB6Z8VSND"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        <button id="nav-button">
-          <i class="contact-icon fa-solid fa-bars"></i>
+    gtag('config', 'G-WCB6Z8VSND');
+  </script>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="nav-header">
+      <img id="logo" src="./images/som_tam-logo.png" />
+
+      <button id="nav-button">
+        <i class="contact-icon fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <ul id="nav-items">
+      <li class="nav-item">
+        <a class="nav-link" href="#menu-section">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#specials-section">Specials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-section">Our Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-section">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <img id="banner" src="./images/som_tam-banner.png" />
+
+  <main id="content">
+    <div class="section" id="menu-section">
+      <h1 class="header" id="menu-header">Menu</h1>
+
+      <div id="menu-switcher">
+        <button class="menu-button" id="daytime-menu-button">
+          COFFEE & DAYTIME</button><button class="menu-button" id="evening-menu-button">
+          TAKEAWAY EVENING
         </button>
       </div>
 
-      <ul id="nav-items">
-        <li class="nav-item">
-          <a class="nav-link" href="#menu-section">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#specials-section">Specials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-section">Our Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-section">Contact</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="menu-hours" id="daytime-hours">
+        8.30am to 1.30pm, Friday to Monday
+      </div>
 
-    <img id="banner" src="./images/som_tam-banner.png" />
-
-    <main id="content">
-      <div class="section" id="menu-section">
-        <h1 class="header" id="menu-header">Menu</h1>
-
-        <div id="menu-switcher">
-          <button class="menu-button" id="daytime-menu-button">
-            COFFEE & DAYTIME</button
-          ><button class="menu-button" id="evening-menu-button">
-            TAKEAWAY EVENING
-          </button>
-        </div>
-
-        <div class="menu-hours" id="daytime-hours">
-          8.30am to 1.30pm, Friday to Monday
-        </div>
-
-        <div class="menu" id="daytime-menu">
-          <div class="menu-column">
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <h2 class="subheader">COFFEE</h2>
-              </div>
-
-              <div class="menu-row">
-                <i class="subheader-description">
-                  All coffee drinks are made with a double shot of Underground
-                  espresso
-                </i>
-              </div>
+      <div class="menu" id="daytime-menu">
+        <div class="menu-column">
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <h2 class="subheader">COFFEE</h2>
             </div>
 
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <b>Black</b>
-                <div class="price">4.50</div>
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Short Black
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Long Black
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Americano
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <b>White</b>
-                <div class="price">5&nbsp;|&nbsp;5.50&nbsp;|&nbsp;6</div>
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Flat White
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Latte
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Cappuccino
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Mocha
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Chai Latte
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Hot Chocolate
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Piccolo
-                </div>
-                <div class="price">4.50</div>
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Short Macchiato
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Long Macchiato
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <b>Iced</b>
-                <div class="price">6</div>
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Americano
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Latte
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <b>Extras</b>
-                <div class="price">0.80</div>
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Alternative Milk
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Extra Shot
-              </div>
-
-              <div class="food">
-                <div class="menu-indentation"></div>
-                Syrup
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-column">
-            <div class="menu-subsection">
-              <div class="menu-row">
-                <h2 class="subheader">LUNCH</h2>
-                <div class="price">18</div>
-              </div>
-
-              <div class="menu-row">
-                <i class="subheader-description">
-                  Our takeaway lunch meals are cooked fresh to order in the wok
-                </i>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="food">
-                <b>Pad Krapow</b>
-              </div>
-
-              <div>
-                Thailand's most famous spicy street food dish. Stir-fried pork
-                with chilli, garlic, bamboo shoots & vegetables, served with
-                steamed jasmine rice. Top with a fried egg for $2 extra.
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="food">
-                <b>Pad Thai</b>
-              </div>
-
-              <div>
-                Stir-fried rice noodles with egg & tamarind sauce, topped with
-                bean sprouts, chives & chopped peanuts. Choose from chicken or
-                vegetables.
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="food">
-                <b>Khao Pad</b>
-              </div>
-
-              <div>
-                Thai fried rice with vegetables, egg & traditional seasoning.
-                Choose from chicken or vegetables.
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <div class="food">
-                <b>Nam Tok</b>
-              </div>
-
-              <div>
-                Thai-style spicy chicken salad with chilli, red onion and mint,
-                served with steamed jasmine rice. Top with a fried egg for $2
-                extra.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="menu-hours" id="evening-hours">
-          4.30pm to 9pm, Thursday to Monday
-        </div>
-
-        <div class="menu" id="evening-menu">
-          <div class="menu-column">
-            <div class="menu-subsection">
-              <h2 class="subheader">STARTERS</h2>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">1</b>
-                  Spring rolls
-                </div>
-                <div class="price">13</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">2</b>
-                  Curry puffs
-                </div>
-                <div class="price">15</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">3</b>
-                  Prawn wontons
-                </div>
-                <div class="price">15</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">4</b>
-                  Steamed prawn dumplings
-                </div>
-                <div class="price">15</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">5</b>
-                  Satay chicken skewers
-                </div>
-                <div class="price">15</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">6</b>
-                  Marinated pork ribs
-                </div>
-                <div class="price">15</div>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <h2 class="subheader">NOODLES & RICE</h2>
-
-              <div class="menu-row">
-                <i class="subheader-description"
-                  >One-plate meals from the wok</i
-                >
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Chicken</i>
-                  &nbsp;|&nbsp;
-                  <i>Vegetables</i>
-                  &nbsp;|&nbsp;
-                  <i>Tofu</i>
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Prawns</i>
-                </div>
-                <div class="price">30</div>
-              </div>
-
-              <div class="menu-linebreak"></div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">7</b>
-                  <b>Pad Thai</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Stir-fried rice noodles with tamarind sauce
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">8</b>
-                  <b>Pad See Ew</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Stir-fried rice noodles with dark soy sauce
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">9</b>
-                  <b>Khao Pad Thai</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Thai fried rice with traditional seasoning
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">10</b>
-                  <b>Khao Pad Gang Kiew Wan</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Green curry fried rice
-                </div>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <h2 class="subheader">CURRY</h2>
-
-              <div class="menu-row">
-                <i class="subheader-description"
-                  >Thai curries in a coconut broth</i
-                >
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Chicken</i>
-                  &nbsp;|&nbsp;
-                  <i>Beef</i>
-                  &nbsp;|&nbsp;
-                  <i>Vegetables</i>
-                  &nbsp;|&nbsp;
-                  <i>Tofu</i>
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Prawns</i>
-                </div>
-                <div class="price">30</div>
-              </div>
-
-              <div class="menu-linebreak"></div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">11</b>
-                  <b>Gang Kiew Wan</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Green curry with seasonal vegetables
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">12</b>
-                  <b>Gang Dang</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Red curry with pumpkin & pineapple
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">13</b>
-                  <b>Gang Panang</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Panang curry with vegetables & peanuts
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">14</b>
-                  <b>Gang Massaman</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Massaman curry with potato & onion
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-column">
-            <div class="menu-subsection">
-              <h2 class="subheader">STIR-FRY</h2>
-
-              <div class="menu-row">
-                <i class="subheader-description">
-                  Thai stir-fry dishes with seasonal vegetables
-                </i>
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Chicken</i>
-                  &nbsp;|&nbsp;
-                  <i>Vegetables</i>
-                  &nbsp;|&nbsp;
-                  <i>Tofu</i>
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Prawns</i>
-                </div>
-                <div class="price">30</div>
-              </div>
-
-              <div class="menu-linebreak"></div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">15</b>
-                  <b>Pad Krapow</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Chilli & garlic stir-fry with bamboo shoots
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">16</b>
-                  <b>Pra Ram Long Sorn</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Peanut sauce stir-fry
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">17</b>
-                  <b>Pad Med Mamuang</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Cashew nut stir-fry
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">18</b>
-                  <b>Pad King</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Ginger stir-fry with oyster sauce
-                </div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">19</b>
-                  <b>Pad Kra Tiem</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Garlic & black pepper stir-fry
-                </div>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <h2 class="subheader">OTHER</h2>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">20</b>
-                  <b>Pad Prew Wan Moo</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Sweet & sour pork with vegetables
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">21</b>
-                  <b>Pad Nua Tua Dum</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Beef & black bean with vegetables
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">22</b>
-                  <b>Gai Gorb</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Crispy lemon chicken with pineapple
-                </div>
-                <div class="price">25</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">23</b>
-                  <b>Tom Yum</b>
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food">
-                  <div class="menu-indentation"></div>
-                  Hot & sour soup with mushrooms
-                </div>
-              </div>
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Chicken</i>
-                  &nbsp;|&nbsp;
-                  <i>Vegetables</i>
-                  &nbsp;|&nbsp;
-                  <i>Tofu</i>
-                </div>
-                <div class="price">23</div>
-              </div>
-              <div class="menu-row">
-                <div class="food-options">
-                  <div class="menu-indentation"></div>
-                  <i>Prawns</i>
-                </div>
-                <div class="price">26</div>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <h2 class="subheader">KIDS</h2>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">24</b>
-                  Satay chicken & fried rice
-                </div>
-                <div class="price">17</div>
-              </div>
-
-              <div class="menu-row">
-                <div class="food">
-                  <b class="food-number">25</b>
-                  Fish & chips
-                </div>
-                <div class="price">14</div>
-              </div>
-            </div>
-
-            <div class="menu-subsection">
-              <i class="menu-note">
-                All our "Curry", "Stir-Fry" & "Other" dishes are served with
-                steamed jasmine rice. Change to fried rice / noodles for $2.
-                Most main dishes can be made gluten free. Menu valid from July
-                2024.
+            <div class="menu-row">
+              <i class="subheader-description">
+                All coffee drinks are made with a double shot of Underground
+                espresso
               </i>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="section" id="specials-section">
-        <h1 class="header" id="specials-header">Specials</h1>
-
-        <div id="specials">
-          <div class="special">
-            <h2 class="subheader">STIR-FRY SUNDAY</h2>
-            <p>$20 for select stir-fry dishes</p>
-            <img
-              loading="lazy"
-              class="photo"
-              src="./images/som_tam-stir_fry-garlic.png"
-            />
-          </div>
-
-          <div class="special">
-            <h2 class="subheader">CURRY MONDAY</h2>
-            <p>$20 for select curry</p>
-            <img
-              loading="lazy"
-              class="photo"
-              src="./images/som_tam-curry-panang.png"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="about-section">
-        <h1 class="header" id="about-header">Our Story</h1>
-
-        <div class="about-subsection">
-          <img
-            loading="lazy"
-            class="photo about-photo"
-            src="./images/som_tam-coffee-mocha.png"
-          />
-
-          <div class="about-paragraph">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum primis
-            torquent elit enim platea consectetur est fringilla. Penatibus quam
-            duis lobortis viverra dignissim himenaeos primis eu. Risus amet quis
-            accumsan tempor maecenas tempor.
-          </div>
-        </div>
-
-        <div class="about-subsection">
-          <div class="about-paragraph">
-            Litora dignissim erat class vestibulum molestie at odio fringilla.
-            Eleifend parturient sollicitudin dictum finibus laoreet. Nulla nulla
-            maximus consequat inceptos urna potenti. Non egestas imperdiet
-            turpis; bibendum augue sapien sollicitudin posuere et.
-          </div>
-
-          <img
-            loading="lazy"
-            class="photo about-photo"
-            src="./images/som_tam-curry-green.png"
-          />
-        </div>
-
-        <div class="about-subsection">
-          <img
-            loading="lazy"
-            class="photo about-photo"
-            src="./images/som_tam-stir_fry-cashew.png"
-          />
-
-          <div class="about-paragraph">
-            Massa arcu hendrerit proin vel primis himenaeos magnis dapibus.
-            Dapibus efficitur aliquet augue euismod phasellus tellus. Eleifend
-            dapibus quam feugiat conubia; et posuere tortor! Nunc ullamcorper
-            lectus dictum, condimentum tellus nam amet.
-          </div>
-        </div>
-      </div>
-
-      <address class="section" id="contact-section">
-        <h1 class="header" id="contact-header">Contact</h1>
-
-        <div id="contact-information">
-          <div class="contact-details">
-            <div>
-              <div>For any enquiries please call</div>
-
-              <div>
-                <i class="contact-icon fa-solid fa-phone"></i>
-                <a target="_blank" href="tel:0800 679 8626">0800 679 8626</a>
-              </div>
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <b>Black</b>
+              <div class="price">4.50</div>
             </div>
 
-            <div>
-              <div>
-                Be the first to hear about our latest updates and promotions by
-                following us on
-              </div>
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Short Black
+            </div>
 
-              <div>
-                <i class="contact-icon fa-brands fa-facebook"></i>
-                <a target="_blank" href="https://www.facebook.com/somtam.nz/">
-                  Facebook
-                </a>
-              </div>
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Long Black
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Americano
             </div>
           </div>
 
-          <div class="contact-details">
-            <iframe
-              id="map"
-              class="photo"
-              loading="lazy"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.4874408319943!2d172.8277139760544!3d-42.52369927117822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3063829541e609%3A0x738cb9a356f7b37d!2sSom%20Tam%20Coffee%20%26%20Thai!5e0!3m2!1sen!2snz!4v1727170966236!5m2!1sen!2snz"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen=""
-            ></iframe>
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <b>White</b>
+              <div class="price">5&nbsp;|&nbsp;5.50&nbsp;|&nbsp;6</div>
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Flat White
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Latte
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Cappuccino
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Mocha
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Chai Latte
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Hot Chocolate
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Piccolo
+              </div>
+              <div class="price">4.50</div>
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Short Macchiato
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Long Macchiato
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <b>Iced</b>
+              <div class="price">6</div>
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Americano
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Latte
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <b>Extras</b>
+              <div class="price">0.80</div>
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Alternative Milk
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Extra Shot
+            </div>
+
+            <div class="food">
+              <div class="menu-indentation"></div>
+              Syrup
+            </div>
           </div>
         </div>
-      </address>
 
-      <footer id="footer">
-        © Som Tam 2024
-      </footer>
-    </main>
-  </body>
+        <div class="menu-column">
+          <div class="menu-subsection">
+            <div class="menu-row">
+              <h2 class="subheader">LUNCH</h2>
+              <div class="price">18</div>
+            </div>
+
+            <div class="menu-row">
+              <i class="subheader-description">
+                Our takeaway lunch meals are cooked fresh to order in the wok
+              </i>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="food">
+              <b>Pad Krapow</b>
+            </div>
+
+            <div>
+              Thailand's most famous spicy street food dish. Stir-fried pork
+              with chilli, garlic, bamboo shoots & vegetables, served with
+              steamed jasmine rice. Top with a fried egg for $2 extra.
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="food">
+              <b>Pad Thai</b>
+            </div>
+
+            <div>
+              Stir-fried rice noodles with egg & tamarind sauce, topped with
+              bean sprouts, chives & chopped peanuts. Choose from chicken or
+              vegetables.
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="food">
+              <b>Khao Pad</b>
+            </div>
+
+            <div>
+              Thai fried rice with vegetables, egg & traditional seasoning.
+              Choose from chicken or vegetables.
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="food">
+              <b>Nam Tok</b>
+            </div>
+
+            <div>
+              Thai-style spicy chicken salad with chilli, red onion and mint,
+              served with steamed jasmine rice. Top with a fried egg for $2
+              extra.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-hours" id="evening-hours">
+        4.30pm to 9pm, Thursday to Monday
+      </div>
+
+      <div class="menu" id="evening-menu">
+        <div class="menu-column">
+          <div class="menu-subsection">
+            <h2 class="subheader">STARTERS</h2>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">1</b>
+                Spring rolls
+              </div>
+              <div class="price">13</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">2</b>
+                Curry puffs
+              </div>
+              <div class="price">15</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">3</b>
+                Prawn wontons
+              </div>
+              <div class="price">15</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">4</b>
+                Steamed prawn dumplings
+              </div>
+              <div class="price">15</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">5</b>
+                Satay chicken skewers
+              </div>
+              <div class="price">15</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">6</b>
+                Marinated pork ribs
+              </div>
+              <div class="price">15</div>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <h2 class="subheader">NOODLES & RICE</h2>
+
+            <div class="menu-row">
+              <i class="subheader-description">One-plate meals from the wok</i>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Chicken</i>
+                &nbsp;|&nbsp;
+                <i>Vegetables</i>
+                &nbsp;|&nbsp;
+                <i>Tofu</i>
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Prawns</i>
+              </div>
+              <div class="price">30</div>
+            </div>
+
+            <div class="menu-linebreak"></div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">7</b>
+                <b>Pad Thai</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Stir-fried rice noodles with tamarind sauce
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">8</b>
+                <b>Pad See Ew</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Stir-fried rice noodles with dark soy sauce
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">9</b>
+                <b>Khao Pad Thai</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Thai fried rice with traditional seasoning
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">10</b>
+                <b>Khao Pad Gang Kiew Wan</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Green curry fried rice
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <h2 class="subheader">CURRY</h2>
+
+            <div class="menu-row">
+              <i class="subheader-description">Thai curries in a coconut broth</i>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Chicken</i>
+                &nbsp;|&nbsp;
+                <i>Beef</i>
+                &nbsp;|&nbsp;
+                <i>Vegetables</i>
+                &nbsp;|&nbsp;
+                <i>Tofu</i>
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Prawns</i>
+              </div>
+              <div class="price">30</div>
+            </div>
+
+            <div class="menu-linebreak"></div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">11</b>
+                <b>Gang Kiew Wan</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Green curry with seasonal vegetables
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">12</b>
+                <b>Gang Dang</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Red curry with pumpkin & pineapple
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">13</b>
+                <b>Gang Panang</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Panang curry with vegetables & peanuts
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">14</b>
+                <b>Gang Massaman</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Massaman curry with potato & onion
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-column">
+          <div class="menu-subsection">
+            <h2 class="subheader">STIR-FRY</h2>
+
+            <div class="menu-row">
+              <i class="subheader-description">
+                Thai stir-fry dishes with seasonal vegetables
+              </i>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Chicken</i>
+                &nbsp;|&nbsp;
+                <i>Vegetables</i>
+                &nbsp;|&nbsp;
+                <i>Tofu</i>
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Prawns</i>
+              </div>
+              <div class="price">30</div>
+            </div>
+
+            <div class="menu-linebreak"></div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">15</b>
+                <b>Pad Krapow</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Chilli & garlic stir-fry with bamboo shoots
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">16</b>
+                <b>Pra Ram Long Sorn</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Peanut sauce stir-fry
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">17</b>
+                <b>Pad Med Mamuang</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Cashew nut stir-fry
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">18</b>
+                <b>Pad King</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Ginger stir-fry with oyster sauce
+              </div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">19</b>
+                <b>Pad Kra Tiem</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Garlic & black pepper stir-fry
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <h2 class="subheader">OTHER</h2>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">20</b>
+                <b>Pad Prew Wan Moo</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Sweet & sour pork with vegetables
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">21</b>
+                <b>Pad Nua Tua Dum</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Beef & black bean with vegetables
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">22</b>
+                <b>Gai Gorb</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Crispy lemon chicken with pineapple
+              </div>
+              <div class="price">25</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">23</b>
+                <b>Tom Yum</b>
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food">
+                <div class="menu-indentation"></div>
+                Hot & sour soup with mushrooms
+              </div>
+            </div>
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Chicken</i>
+                &nbsp;|&nbsp;
+                <i>Vegetables</i>
+                &nbsp;|&nbsp;
+                <i>Tofu</i>
+              </div>
+              <div class="price">23</div>
+            </div>
+            <div class="menu-row">
+              <div class="food-options">
+                <div class="menu-indentation"></div>
+                <i>Prawns</i>
+              </div>
+              <div class="price">26</div>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <h2 class="subheader">KIDS</h2>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">24</b>
+                Satay chicken & fried rice
+              </div>
+              <div class="price">17</div>
+            </div>
+
+            <div class="menu-row">
+              <div class="food">
+                <b class="food-number">25</b>
+                Fish & chips
+              </div>
+              <div class="price">14</div>
+            </div>
+          </div>
+
+          <div class="menu-subsection">
+            <i class="menu-note">
+              All our "Curry", "Stir-Fry" & "Other" dishes are served with
+              steamed jasmine rice. Change to fried rice / noodles for $2.
+              Most main dishes can be made gluten free. Menu valid from July
+              2024.
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="specials-section">
+      <h1 class="header" id="specials-header">Specials</h1>
+
+      <div id="specials">
+        <div class="special">
+          <h2 class="subheader">STIR-FRY SUNDAY</h2>
+          <p>$20 for select stir-fry dishes</p>
+          <img loading="lazy" class="photo" src="./images/som_tam-stir_fry-garlic.png" />
+        </div>
+
+        <div class="special">
+          <h2 class="subheader">CURRY MONDAY</h2>
+          <p>$20 for select curry</p>
+          <img loading="lazy" class="photo" src="./images/som_tam-curry-panang.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="about-section">
+      <h1 class="header" id="about-header">Our Story</h1>
+
+      <div class="about-subsection">
+        <img loading="lazy" class="photo about-photo" src="./images/som_tam-coffee-mocha.png" />
+
+        <div class="about-paragraph">
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Ipsum primis
+          torquent elit enim platea consectetur est fringilla. Penatibus quam
+          duis lobortis viverra dignissim himenaeos primis eu. Risus amet quis
+          accumsan tempor maecenas tempor.
+        </div>
+      </div>
+
+      <div class="about-subsection">
+        <div class="about-paragraph">
+          Litora dignissim erat class vestibulum molestie at odio fringilla.
+          Eleifend parturient sollicitudin dictum finibus laoreet. Nulla nulla
+          maximus consequat inceptos urna potenti. Non egestas imperdiet
+          turpis; bibendum augue sapien sollicitudin posuere et.
+        </div>
+
+        <img loading="lazy" class="photo about-photo" src="./images/som_tam-curry-green.png" />
+      </div>
+
+      <div class="about-subsection">
+        <img loading="lazy" class="photo about-photo" src="./images/som_tam-stir_fry-cashew.png" />
+
+        <div class="about-paragraph">
+          Massa arcu hendrerit proin vel primis himenaeos magnis dapibus.
+          Dapibus efficitur aliquet augue euismod phasellus tellus. Eleifend
+          dapibus quam feugiat conubia; et posuere tortor! Nunc ullamcorper
+          lectus dictum, condimentum tellus nam amet.
+        </div>
+      </div>
+    </div>
+
+    <address class="section" id="contact-section">
+      <h1 class="header" id="contact-header">Contact</h1>
+
+      <div id="contact-information">
+        <div class="contact-details">
+          <div>
+            <div>For any enquiries please call</div>
+
+            <div>
+              <i class="contact-icon fa-solid fa-phone"></i>
+              <a target="_blank" href="tel:0800 679 8626">0800 679 8626</a>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              Be the first to hear about our latest updates and promotions by
+              following us on
+            </div>
+
+            <div>
+              <i class="contact-icon fa-brands fa-facebook"></i>
+              <a target="_blank" href="https://www.facebook.com/somtam.nz/">
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <iframe id="map" class="photo" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.4874408319943!2d172.8277139760544!3d-42.52369927117822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3063829541e609%3A0x738cb9a356f7b37d!2sSom%20Tam%20Coffee%20%26%20Thai!5e0!3m2!1sen!2snz!4v1727170966236!5m2!1sen!2snz"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </address>
+
+    <footer id="footer">
+      © Som Tam 2024
+    </footer>
+  </main>
+</body>
+
 </html>
