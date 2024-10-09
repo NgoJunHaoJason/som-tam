@@ -144,9 +144,9 @@ ul#nav-items {
 li.nav-item {
   display: flex;
   align-items: center;
+  gap: 16px;
 
   @media (width < 768px) {
-    /* display: none; */
     justify-content: right;
   }
 }
