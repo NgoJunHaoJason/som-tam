@@ -77,18 +77,22 @@ nav#navbar {
   display: flex;
   justify-content: space-between;
 
-  background-color: white;
-  box-shadow: 0px 2px var(--shadow-color);
-
   font-family: SFPro;
+  color: white;
 
-  position: sticky;
+  width: 100%;
+  position: fixed;
   z-index: 1;
   top: 0px;
 
   @media (width < 768px) {
     flex-direction: column;
   }
+}
+
+div#navbar-offset {
+  position: absolute;
+  top: -64px;
 }
 
 div#nav-header {
@@ -103,7 +107,8 @@ button#nav-button {
   height: 64px;
   padding: 16px 18px;
   font-size: 32px;
-  background-color: white;
+  background-color: transparent;
+  color: white;
   border: none;
 
   @media (width < 768px) {
