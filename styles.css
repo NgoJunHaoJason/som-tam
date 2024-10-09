@@ -151,7 +151,20 @@ li.nav-item {
   }
 }
 
+a.nav-link {
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
 /* end of navbar styles */
+
+div.landing-point {
+  position: relative;
+  bottom: 64px;
+}
 
 main#content {
   display: flex;
